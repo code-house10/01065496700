@@ -1,874 +1,1071 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شركة نقل اثاث وخدمات رفع العفش - خصم 35%</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#3498db', // Blue
+                        'primary-dark': '#2980b9', // Darker Blue
+                        'secondary': '#f5f5f5', // Light Gray
+                        'accent': '#E74C3C', // Reddish Accent for discounts
+                        'success': '#2ECC71', // Green for confirmation
+                    },
+                    fontFamily: {
+                        'tajawal': ['Tajawal', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+        }
+        /* Slideshow styles */
+        .slideshow-container {
+            position: relative;
+            width: 100%;
+            height: 75vh; /* Increased height */
+            min-height: 400px; /* Increased min-height */
+            max-height: 650px; /* Increased max-height */
+            overflow: hidden;
+        }
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            display: flex; /* For centering content */
+            align-items: center;
+            justify-content: center;
+        }
+        .slide.active {
+            opacity: 1;
+        }
+        .slide-content {
+            position: relative; /* To be above the overlay */
+            z-index: 10;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            max-width: 90%;
+        }
+        .slide-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+            z-index: 5;
+        }
+        .slideshow-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            z-index: 20;
+        }
+        .slideshow-nav button {
+            background-color: rgba(0, 0, 0, 0.3);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .slideshow-nav button:hover {
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+        .slideshow-dots {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 20;
+        }
+        .dot {
+            width: 12px;
+            height: 12px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .dot.active {
+            background-color: white;
+        }
 
-    <head>
-
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-P3X6QL5J');</script>
-<!-- End Google Tag Manager -->
-
-
-
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5KZK4TJ7');</script>
-<!-- End Google Tag Manager -->
-
-
-
-
-        <meta charset="utf-8">
-        <title>أركان لنقل العفش 01065496700 - 01101205001 </title>
-
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
-
-        <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-
-        <!-- Icon Font Stylesheet -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-        <!-- Libraries Stylesheet -->
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-
-    <body>
-
-
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P3X6QL5J"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
-
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5KZK4TJ7"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
-
-
-        <!-- Spinner Start -->
-        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
-            <div class="spinner-grow text-primary" role="status"></div>
-        </div>
-        <!-- Spinner End -->
-
-
-        <!-- Navbar start -->
-        <div class="container-fluid fixed-top px-0">
-            <div class="container px-0">
-                <div class="topbar">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-md-8">
-                            <div class="topbar-info d-flex flex-wrap">
-                                
-                                <a href="#" class="text-light"><i class="fas fa-phone-alt text-white me-2"></i>01065496700</a>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="topbar-icon d-flex align-items-center justify-content-end">
-                                <a href="#" class="btn-square text-white me-2"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#" class="btn-square text-white me-2"><i class="fab fa-twitter"></i></a>
-                                <a href="#" class="btn-square text-white me-2"><i class="fab fa-instagram"></i></a>
-                                <a href="#" class="btn-square text-white me-2"><i class="fab fa-pinterest"></i></a>
-                                <a href="#" class="btn-square text-white me-0"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <nav class="navbar navbar-light bg-light navbar-expand-xl">
-                    <a href="index.html" class="navbar-brand ms-3">
-                        <h1 class="text-primary display-5">أركان لنقل العفش</h1>
-                    </a>
-                    <button class="navbar-toggler py-2 px-3 me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                        <span class="fa fa-bars text-primary"></span>
-                    </button>
-                    <div class="collapse navbar-collapse bg-light" id="navbarCollapse"dir="rtl">
-                        <div class="navbar-nav ms-auto">
-                            <a href="index.html" class="nav-item nav-link active">الرئيسية</a>
-                            <a href="index.html" class="nav-item nav-link">عن الشركة</a>
-                            <a href="index.html" class="nav-item nav-link">خدماتنا</a>
-                            <a href="index.html" class="nav-item nav-link">إتصل بنا</a>
-                            
-
-                            
-                        </div>
-                        <div class="d-flex align-items-center flex-nowrap pt-xl-0" style="margin-left: 15px;">
-                            <a href="tel:01065496700" class="btn-hover-bg btn btn-primary text-white py-2 px-4 me-3">خصم مميز</a>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
-        <!-- Navbar End -->
-
+        .service-card-image, .project-card-image, .article-card-image, .gallery-image-container, .how-to-book-image-container, .footer-gallery-image {
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100%;
+        }
+        .service-card:hover .service-card-image {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+        .project-slider {
+            scroll-behavior: smooth;
+        }
+        .project-card {
+            min-width: 280px;
+        }
         
-       <!-- Carousel Start -->
-        <div class="container-fluid carousel-header vh-100 px-0">
-            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
-                    <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
-                    <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <img src="img/carousel-1.jpg" class="img-fluid" alt="Image">
-                        <div class="carousel-caption">
-                            <div class="p-3" style="max-width: 900px;">
-                                <h4 class="text-white text-uppercase fw-bold mb-4" style="l
-                            <div class="p-3" style="max-width: 900px;">
-                                <h4 class="text-white text-uppercase fw-bold mb-4" style="leetter-spacing: 3px;"></h4>
-                                <h1 class="display-1 text-capitalize text-white mb-4"></h1>
-                                <p class="mb-5 fs-5"> 
-                                </p>
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/carousel-2.jpg" class="img-fluid" alt="Image">
-                        <div class="carousel-caption"></h4>
-                                <h1 class="display-1 text-capitalize text-white mb-4"></h1>
-                                <p class="mb-5 fs-5"> 
-                                </p>
+        .mobile-menu {
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in-out;
+        }
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+        
+        @media (max-width: 768px) {
+            .slideshow-container {
+                height: 60vh; /* Adjusted for mobile */
+                min-height: 350px; /* Adjusted for mobile */
+            }
+            .slide-content h1 {
+                font-size: 1.75rem; /* 28px */
+            }
+            .slide-content p {
+                font-size: 1rem; /* 16px */
+            }
+            .slideshow-nav button {
+                padding: 8px 12px;
+            }
+            .project-card {
+                min-width: 85vw;
+            }
+            .floating-call-button-container {
+                bottom: 20px;
+                left: 20px;
+            }
+            /* General modal positioning for smaller screens */
+            .call-modal-overlay .call-modal-content {
+                width: calc(100% - 40px); /* Full width with some margin */
+                max-width: 320px;
+                /* Centering for universal modal is default (flex on overlay) */
+            }
+             /* FAB modal specific positioning on small screens */
+            #fabCallModal .call-modal-content {
+                left: 20px;
+                bottom: 90px; /* Adjust if FAB size changes */
+                transform: translateX(0); /* Override centering */
+                position: fixed; /* Ensure it's fixed relative to viewport for FAB */
+            }
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .discount-card {
+            border: 2px solid #E74C3C; 
+        }
 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/carousel-3.jpg" class="img-fluid" alt="Image">
-                        <div class="carousel-caption">
-                            <div class="p-3" style="max-width: 900px;">
-                                <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;"></h4>
-                                <h1 class="display-1 text-capitalize text-white mb-4"></h1>
-                                <p class="mb-5 fs-5"> 
-                                </p>
+        .floating-call-button-container {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            z-index: 1000; /* Ensure FAB is above general modal overlay if both active */
+        }
+        .floating-call-button {
+            background-color: #2ECC71;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .floating-call-button:hover {
+            background-color: #27ae60;
+            transform: scale(1.1);
+        }
+        
+        .call-modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            z-index: 990; /* Below FAB, but above most content */
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .call-modal-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        .call-modal-content {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+            padding: 20px;
+            width: 90%;
+            max-width: 350px;
+            transform: scale(0.95);
+            transition: transform 0.3s ease;
+            position: relative; /* Needed for absolute positioning of FAB modal content if it were inside this */
+        }
+        .call-modal-overlay.active .call-modal-content {
+             transform: scale(1);
+        }
 
-                            </div>
-                        </div>
-                    </div>
+        /* Specific styling for the FAB's modal positioning */
+        /* The #fabCallModal itself is an overlay, its .call-modal-content will be positioned */
+        #fabCallModal .call-modal-content {
+            position: fixed; /* Fixed to viewport */
+            bottom: 100px; 
+            left: 30px;
+            /* transform is already handled by general .call-modal-content styles */
+        }
+    </style>
+</head>
+<body class="bg-white font-tajawal">
+    <header class="bg-primary text-white py-4 px-6 sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="https://raw.githubusercontent.com/code-house10/logos/refs/heads/main/dream.png" alt="شعار شركة نقل الاثاث" class="h-10 md:h-12 w-auto">
+                    <div class="text-lg md:text-xl font-bold mr-2 hidden sm:block">شركة اركان لنقل العفش والاثاث</div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
+                
+                <nav class="hidden md:flex items-center space-x-6 space-x-reverse">
+                    <div class="flex space-x-4 space-x-reverse">
+                        <a href="#" class="hover:text-gray-200" aria-label="Twitter">
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
+                        </a>
+                        <a href="#" class="hover:text-gray-200" aria-label="Instagram">
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+                        </a>
+                        <a href="#" class="hover:text-gray-200" aria-label="Facebook">
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg>
+                        </a>
+                    </div>
+                    
+                    <ul class="flex space-x-6 space-x-reverse">
+                        <li><a href="#" class="hover:text-gray-200">الرئيسية</a></li>
+                        <li><a href="#services" class="hover:text-gray-200">خدماتنا</a></li>
+                        <li><a href="#projects" class="hover:text-gray-200">مشاريعنا</a></li>
+                        <li><a href="#articles" class="hover:text-gray-200">المدونة</a></li>
+                        <li><a href="#contact" class="hover:text-gray-200">اتصل بنا</a></li>
+                    </ul>
+                    
+                    <button class="bg-primary-dark hover:bg-accent text-white px-6 py-2 rounded-lg transition duration-300">
+                        اطلب ونش رفع الاثاث
+                    </button>
+                </nav>
+                
+                <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none" aria-label="Open menu">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
                 </button>
             </div>
         </div>
-        <!-- Carousel End -->
+    </header>
 
-
-
-  <!-- Causes Start -->
-<div class="container-fluid causes py-5">
-    <div class="container py-5">
-        <div class="text-center mx-auto pb-5" style="max-width: 800px;">
-            <h5 class="text-uppercase text-primary">خدمات الشركة</h5>
-            <h1 class="mb-4">خصومات هايلة مع شركة أركان لنقل العفش</h1>
-            <p class="mb-0">عندما أخذ طابع مجهول مطبعة</p>
+    <div id="mobile-menu" class="fixed top-0 right-0 h-full w-3/4 bg-primary z-50 p-6 mobile-menu shadow-lg">
+        <div class="flex justify-between items-center mb-8">
+            <img src="https://raw.githubusercontent.com/code-house10/logos/refs/heads/main/dream.png" alt="شعار شركة نقل الاثاث" class="h-10 w-auto">
+            <button id="close-menu-button" class="text-white focus:outline-none" aria-label="Close menu">
+                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
         </div>
-        <div class="row g-4" dir="rtl">
-            <!-- First Cause Item -->
-            <div class="col-lg-6 col-xl-3">
-                <div class="causes-item">
-                    <div class="causes-img">
-                        <img src="img/causes-4.jpg" class="img-fluid w-100" alt="Image">
-                        <div class="causes-link pb-2 px-3">
-                            <small class="text-white"><i class="fas fa-chart-bar text-primary me-2"></i>خصم مميز</small>
-                            <small class="text-white"><i class="fa fa-thumbs-up text-primary me-2"></i>إتصل الان</small>
-                        </div>
-                        <div class="causes-dination p-2">
-                            <a class="btn-hover-bg btn btn-primary text-white py-2 px-3" href="#">خصم مميز</a>
-                        </div>
+        <ul class="space-y-4">
+            <li><a href="#" class="text-white block hover:text-gray-200 py-2">الرئيسية</a></li>
+            <li><a href="#services" class="text-white block hover:text-gray-200 py-2">خدماتنا</a></li>
+            <li><a href="#projects" class="text-white block hover:text-gray-200 py-2">مشاريعنا</a></li>
+            <li><a href="#articles" class="text-white block hover:text-gray-200 py-2">المدونة</a></li>
+            <li><a href="#contact" class="text-white block hover:text-gray-200 py-2">اتصل بنا</a></li>
+        </ul>
+        <div class="mt-8">
+            <button class="bg-primary-dark hover:bg-accent text-white px-6 py-3 rounded-lg transition duration-300 w-full">
+                اطلب ونش رفع الاثاث
+            </button>
+        </div>
+        <div class="mt-8 flex justify-center space-x-6 space-x-reverse">
+             <a href="#" class="text-white hover:text-gray-200" aria-label="Twitter"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a>
+             <a href="#" class="text-white hover:text-gray-200" aria-label="Instagram"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg></a>
+             <a href="#" class="text-white hover:text-gray-200" aria-label="Facebook"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
+        </div>
+    </div>
+
+    <section id="hero-slideshow" class="slideshow-container">
+        <div class="slide active" style="background-image: url('https://raw.githubusercontent.com/code-house10/01065496700/refs/heads/main/img/carousel-1.jpg');">
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+                <h1 class="text-3xl md:text-5xl font-bold mb-4">افضل شركة نقل اثاث بخصم 35%</h1>
+                
+                <button class="trigger-call-modal bg-primary hover:bg-accent text-white px-6 py-2 md:px-8 md:py-3 rounded-lg text-lg transition duration-300">
+                    اتصل بنا الآن لنقل العفش
+                </button>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('https://raw.githubusercontent.com/code-house10/01065496700/refs/heads/main/img/donation-3.jpg');">
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+                <h1 class="text-3xl md:text-5xl font-bold mb-4">ونش رفع الاثاث الحديث بخصم 35%</h1>
+               
+                <button class="trigger-call-modal bg-primary hover:bg-accent text-white px-6 py-2 md:px-8 md:py-3 rounded-lg text-lg transition duration-300">
+                    اطلب ونش بخصم (اتصل الان)
+                </button>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('https://raw.githubusercontent.com/code-house10/01065496700/refs/heads/main/img/carousel-3.jpg');">
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+                <h1 class="text-3xl md:text-5xl font-bold mb-4">شركات نقل اثاث موثوقة بخصم 35%</h1>
+           
+                <button class="trigger-call-modal bg-primary hover:bg-accent text-white px-6 py-2 md:px-8 md:py-3 rounded-lg text-lg transition duration-300">
+                    احصل على الخصم (اتصل الان)
+                </button>
+            </div>
+        </div>
+
+        <div class="slideshow-nav">
+            <button id="prevSlide" aria-label="Previous slide">❮</button>
+            <button id="nextSlide" aria-label="Next slide">❯</button>
+        </div>
+        <div class="slideshow-dots" id="slideshowDots">
+            </div>
+    </section>
+
+
+    <section class="py-12 md:py-16 bg-secondary">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12 text-primary-dark">عروضنا الحصرية - خصم 35%</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden discount-card transform hover:scale-105 transition-transform duration-300">
+                    <div class="bg-accent text-white p-4 text-center">
+                        <h3 class="text-xl font-bold">نقل العفش بأسعار مميزة</h3>
                     </div>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
-                            <span>65%</span>
-                        </div>
+                    <div class="p-6 text-center">
+                        <img src="https://raw.githubusercontent.com/code-house10/01065496700/refs/heads/main/img/donation-1.jpg" alt="نقل العفش بخصم" class="w-full h-40 object-cover mx-auto mb-4 rounded-md" onerror="this.onerror=null;this.src='https://placehold.co/300x200/E74C3C/ffffff?text=خصم+35%25';">
+                        <p class="text-gray-700 mb-2 text-lg">خصم 35% على جميع خدمات نقل العفش</p>
+                        <p class="text-gray-600 text-sm mb-4">نقل اثاث التجمع، المقطم، فيصل، مدينة نصر، والسادس من اكتوبر</p>
+                        <button class="trigger-call-modal w-full bg-accent hover:bg-red-700 text-white py-2 rounded-lg transition duration-300">
+                            احصل على الخصم (اتصل الان)
+                        </button>
                     </div>
-                    <div class="causes-content p-4">
-                        <h4 class="mb-3">سيارات نقل العفش المغلقة </h4>
-                        <p class="mb-4">توفر حماية مثالية للأثاث خلال عمليات النقل. تتميز هذه السيارات بتصميم مغلق يحمي المحتويات من العوامل الجوية مثل المطر والغبار، مما يضمن وصول الأثاث بأمان إلى الوجهة النهائية. يتم تجهيزها بوسائل تثبيت متطورة لمنع التحرك غير المرغوب للأثاث داخل السيارة، ما يقلل من مخاطر التلف. بالإضافة إلى ذلك، توفر هذه السيارات راحة بال للعملاء عبر نقل الأثاث بفعالية وأمان تام..</p>
-                        <a class="btn-hover-bg btn btn-primary text-white py-2 px-3" href="#">إحجز معنا الأن</a>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden discount-card transform hover:scale-105 transition-transform duration-300">
+                    <div class="bg-accent text-white p-4 text-center">
+                        <h3 class="text-xl font-bold">ونش رفع الاثاث الحديث</h3>
+                    </div>
+                    <div class="p-6 text-center">
+                         <img src="https://raw.githubusercontent.com/code-house10/01065496700/refs/heads/main/img/donation-3.jpg" alt="ونش رفع الاثاث بخصم" class="w-full h-40 object-cover mx-auto mb-4 rounded-md" onerror="this.onerror=null;this.src='https://placehold.co/300x200/E74C3C/ffffff?text=خصم+35%25';">
+                        <p class="text-gray-700 mb-2 text-lg">ونش رفع الاثاث بخصم 35%</p>
+                        <p class="text-gray-600 text-sm mb-4">نقل العفش بأحدث معدات لضمان سلامة ممتلكاتك.</p>
+                        <button class="trigger-call-modal w-full bg-accent hover:bg-red-700 text-white py-2 rounded-lg transition duration-300">
+                            اطلب ونش بخصم (اتصل الان)
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden discount-card transform hover:scale-105 transition-transform duration-300">
+                    <div class="bg-accent text-white p-4 text-center">
+                        <h3 class="text-xl font-bold">شركات نقل اثاث موثوقة</h3>
+                    </div>
+                    <div class="p-6 text-center">
+                        <img src="https://raw.githubusercontent.com/code-house10/01065496700/refs/heads/main/img/carousel-3.jpg" alt="شركات نقل اثاث بخصم" class="w-full h-40 object-cover mx-auto mb-4 rounded-md" onerror="this.onerror=null;this.src='https://placehold.co/300x200/E74C3C/ffffff?text=خصم+35%25';">
+                        <p class="text-gray-700 mb-2 text-lg">افضل شركات نقل العفش بخصم 35%</p>
+                         <p class="text-gray-600 text-sm mb-4">نقل عفش الشيخ زايد والتجمع الخامس بأفضل الأسعار.</p>
+                        <button class="trigger-call-modal w-full bg-accent hover:bg-red-700 text-white py-2 rounded-lg transition duration-300">
+                            اتصل بنا الآن
+                        </button>
                     </div>
                 </div>
             </div>
-            <!-- Second Cause Item -->
-            <div class="col-lg-6 col-xl-3">
-                <div class="causes-item">
-                    <div class="causes-img">
-                        <img src="img/causes-2.jpg" class="img-fluid w-100" alt="Image">
-                        <div class="causes-link pb-2 px-3">
-                            <small class="text-white"><i class="fas fa-chart-bar text-primary me-2"></i>خصم مميز</small>
-                            <small class="text-white"><i class="fa fa-thumbs-up text-primary me-2"></i>إتصل الان</small>
-                        </div>
-                        <div class="causes-dination p-2">
-                            <a class="btn-hover-bg btn btn-primary text-white py-2 px-3" href="#">خصم مميز</a>
-                        </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-12 md:py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12 text-primary-dark">خدمات نقل الاثاث المتكاملة</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                <div class="relative service-card rounded-lg overflow-hidden shadow-lg group">
+                    <div class="h-64 service-card-image" style="background-image: url('https://raw.githubusercontent.com/code-house10/01065496700/refs/heads/main/img/service-1.jpg');" onerror="this.style.backgroundImage='url(https://placehold.co/600x400/cccccc/ffffff?text=نقل+اثاث+المنازل)'"></div>
+                    <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-end p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <h3 class="text-xl font-bold mb-2">نقل اثاث المنازل</h3>
+                        <p class="mb-4 text-sm">خدمة نقل كاملة للمنازل مع الفك والتركيب والتغليف الآمن.</p>
+                        <button class="trigger-call-modal bg-primary hover:bg-primary-dark px-4 py-2 rounded-lg transition duration-300 text-sm self-start">
+                            اطلب خدمة (اتصل الان)
+                        </button>
                     </div>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                            <span>95%</span>
-                        </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent group-hover:opacity-0 transition-opacity duration-300">
+                        <h3 class="text-white text-lg font-semibold">نقل اثاث المنازل</h3>
                     </div>
-                    <div class="causes-content p-4">
-                        <h4 class="mb-3">ونش هيدروليكي لرفع الأثاث</h4>
-                        <p class="mb-4">يعتبر الونش الهيدروليكي أداة لا غنى عنها لنقل الأثاث الثقيل بين الطوابق أو خلال عمليات النقل المختلفة.</p>
-                        <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">إحجز معنا الأن</a>
+                </div>
+                
+                <div class="relative service-card rounded-lg overflow-hidden shadow-lg group">
+                    <div class="h-64 service-card-image" style="background-image: url('https://raw.githubusercontent.com/code-house10/01065496700/refs/heads/main/img/service-2.jpg');" onerror="this.style.backgroundImage='url(https://placehold.co/600x400/cccccc/ffffff?text=ونش+رفع+الاثاث)'"></div>
+                    <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-end p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <h3 class="text-xl font-bold mb-2">ونش رفع الاثاث</h3>
+                        <p class="mb-4 text-sm">أحدث اوناش رفع الاثاث للادوار العليا والمباني الضيقة.</p>
+                        <button class="trigger-call-modal bg-primary hover:bg-primary-dark px-4 py-2 rounded-lg transition duration-300 text-sm self-start">
+                            احجز ونش (اتصل الان)
+                        </button>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent group-hover:opacity-0 transition-opacity duration-300">
+                        <h3 class="text-white text-lg font-semibold">ونش رفع الاثاث</h3>
+                    </div>
+                </div>
+                
+                <div class="relative service-card rounded-lg overflow-hidden shadow-lg group">
+                    <div class="h-64 service-card-image" style="background-image: url('https://raw.githubusercontent.com/code-house10/01065496700/refs/heads/main/img/service-3.jpg');" onerror="this.style.backgroundImage='url(https://placehold.co/600x400/cccccc/ffffff?text=نقل+عفش+اكتوبر)'"></div>
+                    <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-end p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <h3 class="text-xl font-bold mb-2">نقل عفش اكتوبر</h3>
+                        <p class="mb-4 text-sm"> متخصصون في نقل العفش بمدينة السادس من اكتوبر باحترافية.</p>
+                        <button class="trigger-call-modal bg-primary hover:bg-primary-dark px-4 py-2 rounded-lg transition duration-300 text-sm self-start">
+                            خدمات اكتوبر (اتصل الان)
+                        </button>
+                    </div>
+                     <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent group-hover:opacity-0 transition-opacity duration-300">
+                        <h3 class="text-white text-lg font-semibold">نقل عفش اكتوبر</h3>
+                    </div>
+                </div>
+                
+                <div class="relative service-card rounded-lg overflow-hidden shadow-lg group">
+                    <div class="h-64 service-card-image" style="background-image: url('https://raw.githubusercontent.com/code-house10/01065496700/refs/heads/main/img/service-4.jpg');" onerror="this.style.backgroundImage='url(https://placehold.co/600x400/cccccc/ffffff?text=نقل+عفش+الشيخ+زايد)'"></div>
+                    <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-end p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <h3 class="text-xl font-bold mb-2">نقل عفش الشيخ زايد</h3>
+                        <p class="mb-4 text-sm">افضل شركة نقل اثاث في الشيخ زايد، سرعة وأمان.</p>
+                        <button class="trigger-call-modal bg-primary hover:bg-primary-dark px-4 py-2 rounded-lg transition duration-300 text-sm self-start">
+                            خدمات الشيخ زايد (اتصل الان)
+                        </button>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent group-hover:opacity-0 transition-opacity duration-300">
+                        <h3 class="text-white text-lg font-semibold">نقل عفش الشيخ زايد</h3>
+                    </div>
+                </div>
+                
+                <div class="relative service-card rounded-lg overflow-hidden shadow-lg group">
+                    <div class="h-64 service-card-image" style="background-image: url('https://raw.githubusercontent.com/code-house10/01065496700/refs/heads/main/img/causes-1.jpg');" onerror="this.style.backgroundImage='url(https://placehold.co/600x400/cccccc/ffffff?text=شركات+نقل+العفش)'"></div>
+                    <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-end p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <h3 class="text-xl font-bold mb-2">شركات نقل العفش</h3>
+                        <p class="mb-4 text-sm">من بين افضل شركات نقل العفش، نقدم خدمات متكاملة وموثوقة.</p>
+                        <button class="trigger-call-modal bg-primary hover:bg-primary-dark px-4 py-2 rounded-lg transition duration-300 text-sm self-start">
+                            لماذا نحن الافضل؟ (اتصل الان)
+                        </button>
+                    </div>
+                     <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent group-hover:opacity-0 transition-opacity duration-300">
+                        <h3 class="text-white text-lg font-semibold">افضل شركات نقل العفش</h3>
+                    </div>
+                </div>
+                
+                <div class="relative service-card rounded-lg overflow-hidden shadow-lg group">
+                    <div class="h-64 service-card-image" style="background-image: url('https://raw.githubusercontent.com/code-house10/01065496700/refs/heads/main/img/causes-2.jpg');" onerror="this.style.backgroundImage='url(https://placehold.co/600x400/cccccc/ffffff?text=نقل+عفش+التجمع+الخامس)'"></div>
+                    <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-end p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <h3 class="text-xl font-bold mb-2">نقل عفش التجمع الخامس</h3>
+                        <p class="mb-4 text-sm">شركة نقل اثاث معتمدة في التجمع الخامس وجميع المناطق المحيطة.</p>
+                        <button class="trigger-call-modal bg-primary hover:bg-primary-dark px-4 py-2 rounded-lg transition duration-300 text-sm self-start">
+                            خدمات التجمع (اتصل الان)
+                        </button>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent group-hover:opacity-0 transition-opacity duration-300">
+                        <h3 class="text-white text-lg font-semibold">نقل عفش التجمع الخامس</h3>
                     </div>
                 </div>
             </div>
-            <!-- Third Cause Item -->
-            <div class="col-lg-6 col-xl-3">
-                <div class="causes-item">
-                    <div class="causes-img">
-                        <img src="img/causes-3.jpg" class="img-fluid w-100" alt="Image">
-                        <div class="causes-link pb-2 px-3">
-                            <small class="text-white"><i class="fas fa-chart-bar text-primary me-2"></i>خصم مميز</small>
-                            <small class="text-white"><i class="fa fa-thumbs-up text-primary me-2"></i>إتصل الان</small>
-                        </div>
-                        <div class="causes-dination p-2">
-                            <a class="btn-hover-bg btn btn-primary text-white py-2 px-3" href="#">خصم مميز</a>
+        </div>
+    </section>
+
+    <section class="py-12 md:py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12 text-primary-dark">كيف تحجز خدمة نقل الاثاث؟</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center transform hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold">1</span>
+                    </div>
+                    <div class="relative h-40 mb-4 overflow-hidden rounded-lg how-to-book-image-container" style="background-image: url('https://raw.githubusercontent.com/code-house10/01065496700/refs/heads/main/img/events-1.jpg');" onerror="this.style.backgroundImage='url(https://placehold.co/300x200/cccccc/ffffff?text=اتصل+بنا)'">
+                        <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                            <h3 class="text-white text-xl font-bold">اتصل بنا</h3>
                         </div>
                     </div>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                            <span>85%</span>
+                    <p class="text-gray-700">تواصل معنا عبر الهاتف أو الواتساب لتحديد احتياجات نقل العفش الخاصة بك.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center transform hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold">2</span>
+                    </div>
+                     <div class="relative h-40 mb-4 overflow-hidden rounded-lg how-to-book-image-container" style="background-image: url('https://raw.githubusercontent.com/code-house10/01065496700/refs/heads/main/img/events-2.jpg');" onerror="this.style.backgroundImage='url(https://placehold.co/300x200/cccccc/ffffff?text=تحديد+الموعد)'">
+                        <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                            <h3 class="text-white text-xl font-bold">تحديد الموعد</h3>
                         </div>
                     </div>
-                    <div class="causes-content p-4">
-                        <h4 class="mb-3">النقل باستخدام الونش الهيدروليكي</h4>
-                        <p class="mb-4">مع تزايد الحاجة لنقل الأثاث الثقيل بين الطوابق أو خلال عمليات النقل من مكان إلى آخر، يصبح الونش الهيدروليكي أداة لا غنى عنها. يتميز هذا النوع من الأوناش بالقوة والفعالية في رفع الأوزان الكبيرة، مما يجعله الخيار الأمثل للمنازل والشركات على حد سواء.</p>
-                        <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">إحجز معنا الأن</a>
+                    <p class="text-gray-700">نقوم بتحديد موعد مناسب للمعاينة وتقدير تكلفة نقل الاثاث بدقة.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center transform hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold">3</span>
+                    </div>
+                    <div class="relative h-40 mb-4 overflow-hidden rounded-lg how-to-book-image-container" style="background-image: url('https://raw.githubusercontent.com/code-house10/01065496700/refs/heads/main/img/events-3.jpg');" onerror="this.style.backgroundImage='url(https://placehold.co/300x200/cccccc/ffffff?text=إتمام+النقل)'">
+                        <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                            <h3 class="text-white text-xl font-bold">إتمام النقل</h3>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">يقوم فريقنا المتخصص بتنفيذ عملية نقل العفش بكفاءة واحترافية عالية.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 md:py-16 trust-section relative" style="background-image: url('https://raw.githubusercontent.com/code-house10/01065496700/refs/heads/main/img/carousel-2.jpg'); background-attachment: fixed;">
+        <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-white mb-8 md:mb-12">لماذا تختار افضل شركة نقل اثاث؟</h2>
+            <p class="text-white text-center text-lg mb-10 max-w-3xl mx-auto">نقل العفش بأيدي مدربة على أعلى مستوى. اعتمد على فريق عملنا المدرب والماهر في نقل العفش، حيث سيتم التعامل مع ممتلكاتك بكل عناية وحرص لضمان سلامتها وحفظ قيمتها أثناء عملية النقل.</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+                <div class="text-center p-4 bg-white bg-opacity-10 rounded-lg">
+                    <div class="bg-white bg-opacity-20 w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 md:w-10 md:h-10 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-white text-3xl md:text-4xl font-bold mb-2">15+</h3>
+                    <p class="text-white text-sm md:text-base">سنوات من الخبرة في نقل الاثاث</p>
+                </div>
+                
+                <div class="text-center p-4 bg-white bg-opacity-10 rounded-lg">
+                    <div class="bg-white bg-opacity-20 w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 md:w-10 md:h-10 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    </div>
+                    <h3 class="text-white text-3xl md:text-4xl font-bold mb-2">5000+</h3>
+                    <p class="text-white text-sm md:text-base">عميل راضٍ عن خدمات نقل العفش</p>
+                </div>
+                
+                <div class="text-center p-4 bg-white bg-opacity-10 rounded-lg">
+                    <div class="bg-white bg-opacity-20 w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 md:w-10 md:h-10 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h3 class="text-white text-3xl md:text-4xl font-bold mb-2">100%</h3>
+                    <p class="text-white text-sm md:text-base">ضمان سلامة الاثاث المنقول</p>
+                </div>
+                
+                <div class="text-center p-4 bg-white bg-opacity-10 rounded-lg">
+                    <div class="bg-white bg-opacity-20 w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 md:w-10 md:h-10 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-white text-3xl md:text-4xl font-bold mb-2">24/7</h3>
+                    <p class="text-white text-sm md:text-base">خدمة ونش رفع الاثاث متاحة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-12 md:py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12 text-primary-dark">مشاريع نقل اثاث ناجحة</h2>
+            
+            <div class="relative">
+                <div class="overflow-x-auto project-slider pb-8 hide-scrollbar">
+                    <div class="flex space-x-6 space-x-reverse">
+                        <div class="project-card bg-gray-50 rounded-lg shadow-lg overflow-hidden flex-shrink-0 w-72 md:w-80">
+                            <img src="https://raw.githubusercontent.com/code-house10/01065496700/refs/heads/main/img/causes-3.jpg" alt="نقل اثاث فيلا بالتجمع الخامس" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/320x192/cccccc/ffffff?text=مشروع+نقل+اثاث';">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-2 text-primary-dark">نقل فيلا بالتجمع الخامس</h3>
+                                <p class="text-gray-700 mb-4 text-sm">تم نقل جميع محتويات الفيلا بأمان تام مع خدمة ونش رفع الاثاث.</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-primary font-bold">التجمع الخامس</span>
+                                    <button class="bg-primary hover:bg-primary-dark text-white px-4 py-2 rounded-lg transition duration-300 text-sm">
+                                        التفاصيل
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card bg-gray-50 rounded-lg shadow-lg overflow-hidden flex-shrink-0 w-72 md:w-80">
+                             <img src="https://raw.githubusercontent.com/code-house10/01065496700/refs/heads/main/img/causes-4.jpg" alt="نقل عفش شركة كبرى باكتوبر" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/320x192/cccccc/ffffff?text=مشروع+نقل+عفش';">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-2 text-primary-dark">نقل شركة كبرى باكتوبر</h3>
+                                <p class="text-gray-700 mb-4 text-sm">نقل مكتب كامل مع المعدات الإلكترونية والأثاث المكتبي لشركة في اكتوبر.</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-primary font-bold">السادس من اكتوبر</span>
+                                    <button class="bg-primary hover:bg-primary-dark text-white px-4 py-2 rounded-lg transition duration-300 text-sm">
+                                        التفاصيل
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card bg-gray-50 rounded-lg shadow-lg overflow-hidden flex-shrink-0 w-72 md:w-80">
+                            <img src="https://raw.githubusercontent.com/code-house10/01065496700/refs/heads/main/img/donation-1.jpg" alt="نقل اثاث شقة بالشيخ زايد" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/320x192/cccccc/ffffff?text=مشروع+نقل+اثاث+شقة';">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-2 text-primary-dark">نقل شقة بالشيخ زايد</h3>
+                                <p class="text-gray-700 mb-4 text-sm">نقل اثاث شقة سكنية بالشيخ زايد مع تغليف احترافي لكل قطعة.</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-primary font-bold">الشيخ زايد</span>
+                                    <button class="bg-primary hover:bg-primary-dark text-white px-4 py-2 rounded-lg transition duration-300 text-sm">
+                                        التفاصيل
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card bg-gray-50 rounded-lg shadow-lg overflow-hidden flex-shrink-0 w-72 md:w-80">
+                            <img src="https://raw.githubusercontent.com/code-house10/01065496700/refs/heads/main/img/donation-3.jpg" alt="شركة لنقل الاثاث بمدينة نصر" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/320x192/cccccc/ffffff?text=شركة+لنقل+الاثاث';">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-2 text-primary-dark">نقل اثاث بمدينة نصر</h3>
+                                <p class="text-gray-700 mb-4 text-sm">افضل شركة لنقل الاثاث بمدينة نصر، خدمة سريعة ومضمونة.</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-primary font-bold">مدينة نصر</span>
+                                    <button class="bg-primary hover:bg-primary-dark text-white px-4 py-2 rounded-lg transition duration-300 text-sm">
+                                        التفاصيل
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button id="slideLeft" aria-label="Previous project" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-primary text-white rounded-full p-2 shadow-lg z-10 opacity-75 hover:opacity-100 transition-opacity">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                </button>
+                <button id="slideRight" aria-label="Next project" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-primary text-white rounded-full p-2 shadow-lg z-10 opacity-75 hover:opacity-100 transition-opacity">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="articles" class="py-12 md:py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12 text-primary-dark">مدونة نقل الاثاث</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://raw.githubusercontent.com/code-house10/01065496700/refs/heads/main/img/blog-1.jpg" alt="نصائح تغليف الاثاث" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/400x240/cccccc/ffffff?text=مدونة+نقل+الاثاث';">
+                    <div class="p-6">
+                        <span class="text-primary text-sm font-bold">15 يونيو 2023</span>
+                        <h3 class="text-xl font-bold my-2 text-primary-dark">نصائح لتغليف الأثاث عند النقل</h3>
+                        <p class="text-gray-700 mb-4 text-sm">تعرف على أفضل الطرق لتغليف الأثاث والمقتنيات الثمينة قبل عملية نقل العفش لضمان سلامتها.</p>
+                        <button class="bg-primary hover:bg-primary-dark text-white px-6 py-2 rounded-lg transition duration-300 text-sm">
+                            اقرأ المزيد
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                     <img src="https://raw.githubusercontent.com/code-house10/01065496700/refs/heads/main/img/blog-2.jpg" alt="اختيار شركة نقل اثاث" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/400x240/cccccc/ffffff?text=مدونة+شركات+النقل';">
+                    <div class="p-6">
+                        <span class="text-primary text-sm font-bold">2 يوليو 2023</span>
+                        <h3 class="text-xl font-bold my-2 text-primary-dark">كيف تختار افضل شركة نقل اثاث؟</h3>
+                        <p class="text-gray-700 mb-4 text-sm">دليلك لاختيار شركة نقل اثاث محترفة. معايير مهمة لتقييم شركات نقل العفش.</p>
+                        <button class="bg-primary hover:bg-primary-dark text-white px-6 py-2 rounded-lg transition duration-300 text-sm">
+                            اقرأ المزيد
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                     <img src="https://raw.githubusercontent.com/code-house10/01065496700/refs/heads/main/img/blog-3.jpg" alt="استخدام ونش رفع الاثاث" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/400x240/cccccc/ffffff?text=مدونة+ونش+الرفع';">
+                    <div class="p-6">
+                        <span class="text-primary text-sm font-bold">20 يوليو 2023</span>
+                        <h3 class="text-xl font-bold my-2 text-primary-dark">أهمية ونش رفع الاثاث</h3>
+                        <p class="text-gray-700 mb-4 text-sm">متى تحتاج إلى ونش رفع الاثاث؟ وكيف يساهم في نقل آمن وسريع لمقتنياتك.</p>
+                        <button class="bg-primary hover:bg-primary-dark text-white px-6 py-2 rounded-lg transition duration-300 text-sm">
+                            اقرأ المزيد
+                        </button>
                     </div>
                 </div>
             </div>
-            <!-- Fourth Cause Item -->
-            <div class="col-lg-6 col-xl-3">
-                <div class="causes-item">
-                    <div class="causes-img">
-                        <img src="img/causes-1.jpg" class="img-fluid w-100" alt="Image">
-                        <div class="causes-link pb-2 px-3">
-                            <small class="text-white"><i class="fas fa-chart-bar text-primary me-2"></i>خصم مميز</small>
-                            <small class="text-white"><i class="fa fa-thumbs-up text-primary me-2"></i>إتصل الان</small>
-                        </div>
-                        <div class="causes-dination p-2">
-                            <a class="btn-hover-bg btn btn-primary text-white py-2 px-3" href="#">خصم مميز</a>
-                        </div>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                            <span>95%</span>
-                        </div>
-                    </div>
-                    <div class="causes-content p-4">
-                        <h4 class="mb-3">اسطول مجهز من السيارات المغلقة فى خدمتك</h4>
-                        <p class="mb-4"> بفضل التصميم المغلق، يبقى الأثاث آمنًا ومثبتًا بوسائل حديثة داخل السيارة، مما يحميه من التلف. لطلب خدمات نقل عفش احترافية وآمنة، تواصل معنا على الأرقام 01101205001 أو 01065496700، وسنضمن لك نقلًا سريعًا وآمنًا لممتلكاتك.</p>
-                        <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">إحجز معنا الأن</a>
+        </div>
+    </section>
+
+    <section class="py-12 md:py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12 text-primary-dark">معرض صور نقل الاثاث</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="relative overflow-hidden rounded-lg h-40 md:h-64 group gallery-image-container" style="background-image: url('https://raw.githubusercontent.com/code-house10/01065496700/refs/heads/main/img/gallery-1.jpg');" onerror="this.style.backgroundImage='url(https://placehold.co/400x250/cccccc/ffffff?text=شاحنة+نقل+الاثاث)'">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300 flex items-center justify-center">
+                        <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300">شاحنة نقل الاثاث</span>
                     </div>
                 </div>
+                <div class="relative overflow-hidden rounded-lg h-40 md:h-64 group gallery-image-container" style="background-image: url('https://raw.githubusercontent.com/code-house10/01065496700/refs/heads/main/img/gallery-2.jpg');" onerror="this.style.backgroundImage='url(https://placehold.co/400x250/cccccc/ffffff?text=فريق+نقل+العفش)'">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300 flex items-center justify-center">
+                        <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300">فريق نقل العفش</span>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-lg h-40 md:h-64 group gallery-image-container" style="background-image: url('https://raw.githubusercontent.com/code-house10/01065496700/refs/heads/main/img/gallery-3.jpg');" onerror="this.style.backgroundImage='url(https://placehold.co/400x250/cccccc/ffffff?text=تغليف+الاثاث)'">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300 flex items-center justify-center">
+                        <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300">تغليف الاثاث</span>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-lg h-40 md:h-64 group gallery-image-container" style="background-image: url('https://raw.githubusercontent.com/code-house10/01065496700/refs/heads/main/img/gallery-4.jpg');" onerror="this.style.backgroundImage='url(https://placehold.co/400x250/cccccc/ffffff?text=ونش+رفع+عفش)'">
+                     <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300 flex items-center justify-center">
+                        <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300">ونش رفع عفش</span>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-lg h-40 md:h-64 col-span-2 md:col-span-2 group gallery-image-container" style="background-image: url('https://raw.githubusercontent.com/code-house10/01065496700/refs/heads/main/img/gallery-5.jpg');" onerror="this.style.backgroundImage='url(https://placehold.co/800x250/cccccc/ffffff?text=اسطول+شاحنات+النقل)'">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300 flex items-center justify-center">
+                        <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300">أسطول شاحنات النقل</span>
+                    </div>
+                </div>
+                 <div class="relative overflow-hidden rounded-lg h-40 md:h-64 col-span-2 md:col-span-2 group gallery-image-container" style="background-image: url('https://raw.githubusercontent.com/code-house10/01065496700/refs/heads/main/img/events-4.jpg');" onerror="this.style.backgroundImage='url(https://placehold.co/800x250/cccccc/ffffff?text=نقل+اثاث+شركات)'">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300 flex items-center justify-center">
+                        <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300">نقل اثاث شركات</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-gray-900 text-gray-400 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="https://raw.githubusercontent.com/code-house10/logos/refs/heads/main/dream.png" alt="شعار شركة اركان لنقل العفش والاثاث" class="h-10 w-auto">
+                        <h3 class="text-white text-xl font-bold mr-2">شركة اركان لنقل العفش والاثاث</h3>
+                    </div>
+                    <p class="mb-4 text-sm">نقدم خدمات نقل اثاث احترافية وآمنة، ونش رفع الاثاث، نقل عفش اكتوبر، الشيخ زايد، التجمع الخامس وجميع المحافظات. خصم 35% الآن!</p>
+                    <div class="flex space-x-4 space-x-reverse">
+                        <a href="#" class="text-gray-400 hover:text-white" aria-label="Facebook"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
+                        <a href="#" class="text-gray-400 hover:text-white" aria-label="Twitter"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a>
+                        <a href="#" class="text-gray-400 hover:text-white" aria-label="Instagram"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">روابط سريعة</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white text-sm">الرئيسية</a></li>
+                        <li><a href="#services" class="hover:text-white text-sm">خدمات نقل الاثاث</a></li>
+                        <li><a href="#projects" class="hover:text-white text-sm">مشاريعنا في نقل العفش</a></li>
+                        <li><a href="#articles" class="hover:text-white text-sm">مدونة شركات نقل الاثاث</a></li>
+                        <li><a href="#contact" class="hover:text-white text-sm">اتصل بنا</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">خدماتنا المميزة</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#services" class="hover:text-white text-sm">نقل اثاث شامل</a></li>
+                        <li><a href="#services" class="hover:text-white text-sm">ونش رفع الاثاث</a></li>
+                        <li><a href="#services" class="hover:text-white text-sm">تغليف احترافي للاثاث</a></li>
+                        <li><a href="#services" class="hover:text-white text-sm">نقل عفش اكتوبر والشيخ زايد</a></li>
+                        <li><a href="#services" class="hover:text-white text-sm">افضل شركة نقل اثاث بالتجمع</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">صور من مشاريعنا</h3>
+                    <div class="grid grid-cols-3 gap-2">
+                        <div class="footer-gallery-image rounded" style="background-image: url('https://raw.githubusercontent.com/code-house10/01065496700/refs/heads/main/img/gallery-footer-1.jpg'); height: 70px;" onerror="this.style.backgroundImage='url(https://placehold.co/100x70/cccccc/ffffff?text=صورة1)'"></div>
+                        <div class="footer-gallery-image rounded" style="background-image: url('https://raw.githubusercontent.com/code-house10/01065496700/refs/heads/main/img/gallery-footer-2.jpg'); height: 70px;" onerror="this.style.backgroundImage='url(https://placehold.co/100x70/cccccc/ffffff?text=صورة2)'"></div>
+                        <div class="footer-gallery-image rounded" style="background-image: url('https://raw.githubusercontent.com/code-house10/01065496700/refs/heads/main/img/gallery-footer-3.jpg'); height: 70px;" onerror="this.style.backgroundImage='url(https://placehold.co/100x70/cccccc/ffffff?text=صورة3)'"></div>
+                        <div class="footer-gallery-image rounded" style="background-image: url('https://raw.githubusercontent.com/code-house10/01065496700/refs/heads/main/img/gallery-footer-4.jpg'); height: 70px;" onerror="this.style.backgroundImage='url(https://placehold.co/100x70/cccccc/ffffff?text=صورة4)'"></div>
+                        <div class="footer-gallery-image rounded" style="background-image: url('https://raw.githubusercontent.com/code-house10/01065496700/refs/heads/main/img/gallery-footer-5.jpg'); height: 70px;" onerror="this.style.backgroundImage='url(https://placehold.co/100x70/cccccc/ffffff?text=صورة5)'"></div>
+                        <div class="footer-gallery-image rounded" style="background-image: url('https://raw.githubusercontent.com/code-house10/01065496700/refs/heads/main/img/gallery-footer-6.jpg'); height: 70px;" onerror="this.style.backgroundImage='url(https://placehold.co/100x70/cccccc/ffffff?text=صورة6)'"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-sm">&copy; 2024 جميع الحقوق محفوظة لـ شركة اركان لنقل العفش والاثاث. تصميم وتطوير Code House.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-call-button-container">
+        <button id="fab" class="floating-call-button" aria-label="اتصل بنا">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+        </button>
+    </div>
+
+    <div id="universalCallModalOverlay" class="call-modal-overlay">
+        <div class="call-modal-content">
+            <div id="universalInitialQuestion">
+                <p class="text-lg font-semibold text-gray-800 mb-3 text-center">طلب خدمة نقل الأثاث</p>
+                <p class="text-gray-700 mb-4 text-sm text-center">هل أنت جاد في طلب خدمة نقل الأثاث الآن وترغب في التحدث إلينا؟</p>
+                <div class="flex justify-around">
+                    <button id="universalConfirmCallBtn" class="bg-success hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm transition duration-300">نعم، أريد الاتصال</button>
+                    <button id="universalCancelCallBtn" class="bg-gray-300 hover:bg-gray-400 text-gray-800 px-4 py-2 rounded-lg text-sm transition duration-300">لا، أتصفح فقط</button>
+                </div>
+            </div>
+            <div id="universalCallAction" class="hidden text-center">
+                <p class="text-lg font-semibold text-gray-800 mb-3">اتصل بنا مباشرة!</p>
+                <a href="tel:01065496700" id="universalDirectCallLink" class="block w-full bg-success hover:bg-green-600 text-white px-6 py-3 rounded-lg text-lg transition duration-300 font-bold">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="vertical-align: middle;">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                    01065496700
+                </a>
+                <button id="universalCloseModalFinal" class="mt-3 text-sm text-gray-500 hover:text-gray-700">إغلاق</button>
             </div>
         </div>
     </div>
-</div>
-<!-- Causes End -->
+    
+    <div id="fabCallModal" class="call-modal-overlay attached-to-fab"> 
+        <div class="call-modal-content">
+             </div>
+    </div>
 
 
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const closeMenuButton = document.getElementById('close-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
 
+        if (mobileMenuButton && closeMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.add('active');
+            });
 
+            closeMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+            
+            const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.remove('active');
+                });
+            });
+        }
 
-        <!-- Services Start -->
-        <div class="container-fluid service py-5 bg-light" dir="rtl">
-            <div class="container py-5">
-                <div class="text-center mx-auto pb-5" style="max-width: 800px;">
-                  
-                    <h1 class="mb-0">خدمات نقل عفش أمنة وسريعة </h1>
-                </div>
-                <div class="row g-4">
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="service-item">
-                            <img src="img/service-1.jpg" class="img-fluid w-100" alt="Image">
-                            <div class="service-link">
-                                <a href="#" class="h4 mb-0">01101205001 - 01065496700</a>
-                            </div>
-                        </div>
-                        <p class="my-4">
-                        </p>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="service-item">
-                            <img src="img/service-2.jpg" class="img-fluid w-100" alt="Image">
-                            <div class="service-link">
-                                <a href="#" class="h4 mb-0"> 01101205001 - 01065496700</a>
-                            </div>
-                        </div>
-                        <p class="my-4">
-                        </p>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="service-item">
-                            <img src="img/service-3.jpg" class="img-fluid w-100" alt="Image">
-                            <div class="service-link">
-                                <a href="#" class="h4 mb-0">01101205001 - 01065496700</a>
-                            </div>
-                        </div>
-                        <p class="my-4">
-                        </p>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="service-item">
-                            <img src="img/service-4.jpg" class="img-fluid w-100" alt="Image">
-                            <div class="service-link">
-                                <a href="#" class="h4 mb-0">01101205001 - 01065496700</a>
-                            </div>
-                        </div>
-                        <p class="my-4">
-                        </p>
-                    </div>
-                    <div class="col-12">
-                        <div class="d-flex align-items-center justify-content-center">
-                            <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">إحجز معنا الأن</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Services End -->
+        // Project slider
+        const projectSlider = document.querySelector('.project-slider');
+        const slideLeftButton = document.getElementById('slideLeft');
+        const slideRightButton = document.getElementById('slideRight');
 
+        if (projectSlider && slideLeftButton && slideRightButton) {
+            const scrollAmount = 300; 
 
-        <!-- Donation Start -->
-        <div class="container-fluid donation py-5" dir="rtl">
-            <div class="container py-5">
-                <div class="text-center mx-auto pb-5" style="max-width: 800px;">
-                    <h5 class="text-uppercase text-primary">خصومات مناسبة</h5>
-                    <h1 class="mb-0">إتصل بنا واحجز واستفيد بخصم مميز</h1>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-4">
-                        <div class="donation-item">
-                            <img src="img/donation-1.jpg" class="img-fluid w-100" alt="Image">
-                            <div class="donation-content d-flex flex-column">
-                               
-                                <a href="#" class="btn-hover-color display-6 text-white"></a>
-                             
-                                <p class="text-white mb-4">دقة وأمان: تضمن الشركة نقل الأثاث بدقة وأمان بفضل معداتها المتطورة وفريقها المدرب، مما يمنح العملاء راحة البال.
+            slideLeftButton.addEventListener('click', () => {
+                projectSlider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            });
 
+            slideRightButton.addEventListener('click', () => {
+                projectSlider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            });
+        }
 
-
-
-</p>
-                                <div class="donation-btn d-flex align-items-center justify-content-start">
-                                    <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">01101205001 - 01065496700</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="donation-item">
-                            <img src="img/service-2.jpg" class="img-fluid w-100" alt="Image">
-                            <div class="donation-content d-flex flex-column">
-                                
-                                <a href="#" class="btn-hover-color display-6 text-white"></a>
-                               
-                                <p class="text-white mb-4">تغليف احترافي: تعتمد على مواد تغليف عالية الجودة وتقنيات حديثة لحماية الأثاث من التلف والخدوش أثناء النقل.
-</p>
-                                <div class="donation-btn d-flex align-items-center justify-content-start">
-                                    <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">01101205001 - 01065496700</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="donation-item">
-                            <img src="img/donation-3.jpg" class="img-fluid w-100" alt="Image">
-                            <div class="donation-content d-flex flex-column">
-
-                                <a href="#" class="btn-hover-color display-6 text-white"></a>
-                             
-                                <p class="text-white mb-4">خدمات نقل متكاملة: تقدم الشركة حلاً شاملاً لنقل العفش، بما يشمل التعبئة، التغليف، النقل، والفك والتركيب، لضمان تجربة نقل سهلة وبدون متاعب.
-</p>
-                                <div class="donation-btn d-flex align-items-center justify-content-start">
-                                    <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">01101205001 - 01065496700</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Donation End -->
-
-
-        <!-- Counter Start -->
-        <div class="container-fluid counter py-5" style="background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url(img/volunteers-bg.jpg) center center; background-size: cover;">
-            <div class="container py-5">
-                <div class="text-center mx-auto pb-5" style="max-width: 800px;">
-                    <h5 class="text-uppercase text-primary">خدمة 24 ساعة</h5>
-                    <p class="text-white mb-0"> نعمل على مدار الاسبوع
-                    </p>
-                </div>
-                <div class="row g-4">
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="counter-item text-center border p-5">
-                            <i class="fas fa-thumbs-up fa-4x text-white"></i>
-                            <h3 class="text-white my-4">هتوفر معانا كتير</h3>
-                            <div class="counter-counting">
-                                <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">100</span>
-                                <span class="h1 fw-bold text-primary">%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="counter-item text-center border p-5">
-                            <i class="fas fa-file-invoice-dollar fa-4x text-white"></i>
-                            <h3 class="text-white my-4">خدماتنا مرضية ليك</h3>
-                            <div class="counter-counting text-center border-white w-100" style="border-style: dotted; font-size: 30px;">
-                                <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">100</span>
-                                <span class="h1 fw-bold text-primary">%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="counter-item text-center border p-5">
-                            <i class="fas fa-user fa-4x text-white"></i>
-                            <h3 class="text-white my-4">عمالة محترفة</h3>
-                            <div class="counter-counting text-center border-white w-100" style="border-style: dotted; font-size: 30px;">
-                                <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">100</span>
-                                <span class="h1 fw-bold text-primary">%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="counter-item text-center border p-5">
-                            <i class="fas fa-heart fa-4x text-white"></i>
-                            <h3 class="text-white my-4">نقل عفش بكل دقة</h3>
-                            <div class="counter-counting text-center border-white w-100" style="border-style: dotted; font-size: 30px;">
-                                <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">100</span>
-                                <span class="h1 fw-bold text-primary">%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Counter End -->
-
-
-      
-
-
-        <!-- Events Start -->
-        <div class="container-fluid event py-5" >
-            <div class="container py-5" >
-                <div class="text-center mx-auto mb-5" style="max-width: 800px;">
-                    <h5 class="text-uppercase text-primary"></h5>
-                    <h1 class="mb-0">شركة أركان لنقل العفش - 01101205001 - 01065496700</h1>
-                </div>
-                <div class="event-carousel-wrapper">
-                  <div class="event-carousel owl-carousel">
-                    <div class="event-item">
-                        <img src="img/events-1.jpg" class="img-fluid w-100" alt="Image">
-                        <div class="event-content p-4">
-                            <div class="d-flex justify-content-between mb-4">
-                                <span class="text-body"><i class="fas fa-map-marker-alt me-2"></i>شركة أركان لنقل العفش - 01101205001 - 01065496700</span>
-                               
-                            </div>
-                            <h4 class="mb-4"></h4>
-                            
-                            <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">إحجز معنا الأن</a>
-                        </div>
-                    </div>
-                    <div class="event-item">
-                        <img src="img/events-2.jpg" class="img-fluid w-100" alt="Image">
-                        <div class="event-content p-4">
-                            <div class="d-flex justify-content-between mb-4">
-                                <span class="text-body"><i class="fas fa-map-marker-alt me-2"></i>شركة أركان لنقل العفش - 01101205001 - 01065496700</span>
-                               
-                            </div>
-                            <h4 class="mb-4"></h4>
-                            
-                            <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">إحجز معنا الأن</a>
-                        </div>
-                    </div>
-                    <div class="event-item">
-                        <img src="img/events-3.jpg" class="img-fluid w-100" alt="Image">
-                        <div class="event-content p-4">
-                            <div class="d-flex justify-content-between mb-4">
-                                <span class="text-body"><i class="fas fa-map-marker-alt me-2"></i>شركة أركان لنقل العفش - 01101205001 - 01065496700</span>
-                                
-                            </div>
-                            <h4 class="mb-4"></h4>
-                          
-                            <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">إحجز معنا الأن</a>
-                        </div>
-                    </div>
-                    <div class="event-item">
-                        <img src="img/events-4.jpg" class="img-fluid w-100" alt="Image">
-                        <div class="event-content p-4">
-                            <div class="d-flex justify-content-between mb-4">
-                                <span class="text-body"><i class="fas fa-map-marker-alt me-2"></i>شركة أركان لنقل العفش - 01101205001 - 01065496700</span>
-                               
-                            </div>
-                            <h4 class="mb-4"></h4>
-                            
-                            <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">إحجز معنا الأن</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Events End -->
-
-        <!-- Blog Start -->
-        <div class="container-fluid blog py-5 mb-5">
-            <div class="container py-5">
-                <div class="text-center mx-auto pb-5" style="max-width: 800px;">
-
-                    <h1 class="mb-0">شركة أركان لنقل العفش - 01101205001 - 01065496700
-                    </h1>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-6 col-xl-3">
-                        <div class="blog-item">
-                            <div class="blog-img">
-                                <img src="img/blog-1.jpg" class="img-fluid w-100" alt="">
-                                <div class="blog-info">
-                                    <span><i class="fa fa-clock"></i> نقل عفش</span>
-                                    <div class="d-flex">
-                                        <span class="me-3"> 3 <i class="fa fa-heart"></i></span>
-                                        <a href="#" class="text-white">0 <i class="fa fa-comment"></i></a>
-                                    </div>
-                                </div>
-                                <div class="search-icon">
-                                    <a href="img/blog-1.jpg" data-lightbox="Blog-1" class="my-auto"><i class="fas fa-search-plus btn-primary text-white p-3"></i></a>
-                                </div>
-                            </div>
-                            <div class="text-dark border p-4 ">
-                                <h4 class="mb-4">تغليف العفش: الحماية والكفاءة</h4>
-                                <p class="mb-4">يعد تغليف العفش خطوة أساسية في حماية الأثاث أثناء النقل، حيث يوفر حلاً فعالاً لمنع الخدوش والتلف عن طريق استخدام مواد مثل النايلون الفقاعي والكرتون. تُساهم هذه العملية في الحفاظ على قطع الأثاث بحالتها الجيدة، مما يضمن وصولها سليمة إلى وجهتها النهائية.
-
-
-
-
-
-</p>
-                                <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">إحجز معنا الأن</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-3">
-                        <div class="blog-item">
-                            <div class="blog-img">
-                                <img src="img/blog-2.jpg" class="img-fluid w-100" alt="">
-                                <div class="blog-info">
-                                    <span><i class="fa fa-clock"></i> نقل عفش</span>
-                                    <div class="d-flex">
-                                        <span class="me-3"> 3 <i class="fa fa-heart"></i></span>
-                                        <a href="#" class="text-white">0 <i class="fa fa-comment"></i></a>
-                                    </div>
-                                </div>
-                                <div class="search-icon">
-                                    <a href="img/blog-2.jpg" data-lightbox="Blog-2" class="my-auto"><i class="fas fa-search-plus btn-primary text-white p-3"></i></a>
-                                </div>
-                            </div>
-                            <div class="text-dark border p-4 ">
-                                <h4 class="mb-4">سيارات نقل العفش المغلقة: الأمان والراحة</h4>
-                                <p class="mb-4">سيارات نقل العفش المغلقة توفر حلاً مثاليًا لنقل الأثاث بأمان وبدون مخاطر التعرض للعوامل الجوية أو السرقة. توفر هذه السيارات بيئة محمية ومراقبة لضمان وصول العفش إلى وجهته بحالة جيدة ودون أي تلفيات، مما يجعلها خياراً مفضلاً للنقل الآمن والموثوق به.
-
-
-
-
-
-</p>
-                                <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">إحجز معنا الأن</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-3">
-                        <div class="blog-item">
-                            <div class="blog-img">
-                                <img src="img/blog-3.jpg" class="img-fluid w-100" alt="">
-                                <div class="blog-info">
-                                    <span><i class="fa fa-clock"></i> نقل عفش</span>
-                                    <div class="d-flex">
-                                        <span class="me-3"> 3 <i class="fa fa-heart"></i></span>
-                                        <a href="#" class="text-white">0 <i class="fa fa-comment"></i></a>
-                                    </div>
-                                </div>
-                                <div class="search-icon">
-                                    <a href="img/blog-3.jpg" data-lightbox="Blog-3" class="my-auto"><i class="fas fa-search-plus btn-primary text-white p-3"></i></a>
-                                </div>
-                            </div>
-                            <div class="text-dark border p-4 ">
-                                <h4 class="mb-4">اسطول سيارات مجهز لنقل العفش</h4>
-                                <p class="mb-4">يعتبر اسطول السيارات المجهزة لنقل العفش حلاً مثالياً لمن يبحثون عن الاعتمادية والأمان في عملية نقل الأثاث. يتميز هذا الاسطول بتوفير مساحات تخزينية آمنة ومناسبة لجميع أنواع الأثاث، مع توفير معدات الحماية والتثبيت اللازمة لضمان وصول العفش إلى وجهته بدون تلفيات.
-
-
-
-
-
-</p>
-                                <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">إحجز معنا الأن</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-3">
-                        <div class="blog-item">
-                            <div class="blog-img">
-                                <img src="img/blog-4.jpg" class="img-fluid w-100" alt="">
-                                <div class="blog-info">
-                                    <span><i class="fa fa-clock"></i> نقل عفش</span>
-                                    <div class="d-flex">
-                                        <span class="me-3"> 3 <i class="fa fa-heart"></i></span>
-                                        <a href="#" class="text-white">0 <i class="fa fa-comment"></i></a>
-                                    </div>
-                                </div>
-                                <div class="search-icon">
-                                    <a href="img/blog-4.jpg" data-lightbox="Blog-4" class="my-auto"><i class="fas fa-search-plus btn-primary text-white p-3"></i></a>
-                                </div>
-                            </div>
-                            <div class="text-dark border p-4 ">
-                                <h4 class="mb-4">الضمان لتجربة نقل مريحة وخالية من التوتر</h4>
-                                <p class="mb-4">احترافية عمال نقل العفش: مفتاح السلامة والدقة في كل تفاصيل النقل</p>
-                                <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">إحجز معنا الأن</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Blog End -->
-
-
-        <!-- Gallery Start -->
-        <div class="container-fluid gallery py-5 px-0">
-            <div class="text-center mx-auto pb-5" style="max-width: 800px;">
-                <h5 class="text-uppercase text-primary"></h5>
-                <h1 class="mb-4">خدمات نقل عفش مع شركة أركان امنة ومريحة</h1>
-               
-            </div>
-            <div class="row g-0">
-                <div class="col-lg-4">
-                    <div class="gallery-item">
-                        <img src="img/gallery-2.jpg" class="img-fluid w-100" alt="">
-                        <div class="search-icon">
-                            <a href="img/gallery-2.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-search-plus btn-hover-color bg-white text-primary p-3"></i></a>
-                        </div>
-                        <div class="gallery-content">
-                            <div class="gallery-inner pb-5">
-                                <a href="#" class="h4 text-white">ونش هيدروليكى مخصص</a>
-                                <a href="#" class="text-white"><p class="mb-0">01101205001 - 01065496700</p></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="img/gallery-3.jpg" class="img-fluid w-100" alt="">
-                        <div class="search-icon">
-                            <a href="img/gallery-3.jpg" data-lightbox="gallery-3" class="my-auto"><i class="fas fa-search-plus btn-hover-color bg-white text-primary p-3"></i></a>
-                        </div>
-                        <div class="gallery-content">
-                            <div class="gallery-inner pb-5">
-                                <a href="#" class="h4 text-white">نجاريين محترفين</a>
-                                <a href="#" class="text-white"><p class="mb-0">01101205001 - 01065496700</p></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="gallery-item">
-                        <img src="img/gallery-1.jpg" class="img-fluid w-100" alt="">
-                        <div class="search-icon">
-                            <a href="img/gallery-1.jpg" data-lightbox="gallery-1" class="my-auto"><i class="fas fa-search-plus btn-hover-color bg-white text-primary p-3"></i></a>
-                        </div>
-                        <div class="gallery-content">
-                            <div class="gallery-inner pb-5">
-                                <a href="#" class="h4 text-white">تغليف شامل</a>
-                                <a href="#" class="text-white"><p class="mb-0">01101205001 - 01065496700</p></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="gallery-item">
-                        <img src="img/gallery-4.jpg" class="img-fluid w-100" alt="">
-                        <div class="search-icon">
-                            <a href="img/gallery-4.jpg" data-lightbox="gallery-4" class="my-auto"><i class="fas fa-search-plus btn-hover-color bg-white text-primary p-3"></i></a>
-                        </div>
-                        <div class="gallery-content">
-                            <div class="gallery-inner pb-5">
-                                <a href="#" class="h4 text-white">فك وتركيب جميع انواع الغرف</a>
-                                <a href="#" class="text-white"><p class="mb-0">01101205001 - 01065496700</p></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="img/gallery-5.jpg" class="img-fluid w-100" alt="">
-                        <div class="search-icon">
-                            <a href="img/gallery-5.jpg" data-lightbox="gallery-5" class="my-auto"><i class="fas fa-search-plus btn-hover-color bg-white text-primary p-3"></i></a>
-                        </div>
-                        <div class="gallery-content">
-                            <div class="gallery-inner pb-5">
-                                <a href="#" class="h4 text-white">فنيين تكييف للفك والتركيب والشحن</a>
-                                <a href="#" class="text-white"><p class="mb-0">01101205001 - 01065496700</p></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Gallery End -->
-
-
- 
-
-
-        <!-- Footer Start -->
-        <div class="container-fluid footer bg-dark text-body py-5" dir="rtl">
-            <div class="container py-5">
-                <div class="row g-5">
-                 
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-
-                    </div>
-               
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item">
-                            <h4 class="mb-4 text-white"></h4>
-                            <div class="row g-2">
-                                <div class="col-4">
-                                    <div class="footer-gallery">
-                                        <img src="img/gallery-footer-1.jpg" class="img-fluid w-100" alt="">
-                                        <div class="footer-search-icon">
-                                            <a href="img/gallery-footer-1.jpg" data-lightbox="footerGallery-1" class="my-auto"><i class="fas fa-search-plus text-white"></i></a>
-                                        </div>
-                                    </div>
-                               </div>
-                               <div class="col-4">
-                                    <div class="footer-gallery">
-                                        <img src="img/gallery-footer-2.jpg" class="img-fluid w-100" alt="">
-                                        <div class="footer-search-icon">
-                                            <a href="img/gallery-footer-2.jpg" data-lightbox="footerGallery-2" class="my-auto"><i class="fas fa-search-plus text-white"></i></a>
-                                        </div>
-                                    </div>
-                               </div>
-                                <div class="col-4">
-                                    <div class="footer-gallery">
-                                        <img src="img/gallery-footer-3.jpg" class="img-fluid w-100" alt="">
-                                        <div class="footer-search-icon">
-                                            <a href="img/gallery-footer-3.jpg" data-lightbox="footerGallery-3" class="my-auto"><i class="fas fa-search-plus text-white"></i></a>
-                                        </div>
-                                    </div>
-                               </div>
-                                <div class="col-4">
-                                    <div class="footer-gallery">
-                                        <img src="img/gallery-footer-4.jpg" class="img-fluid w-100" alt="">
-                                        <div class="footer-search-icon">
-                                            <a href="img/gallery-footer-4.jpg" data-lightbox="footerGallery-4" class="my-auto"><i class="fas fa-search-plus text-white"></i></a>
-                                        </div>
-                                    </div>
-                               </div>
-                                <div class="col-4">
-                                    <div class="footer-gallery">
-                                        <img src="img/gallery-footer-5.jpg" class="img-fluid w-100" alt="">
-                                        <div class="footer-search-icon">
-                                            <a href="img/gallery-footer-5.jpg" data-lightbox="footerGallery-5" class="my-auto"><i class="fas fa-search-plus text-white"></i></a>
-                                        </div>
-                                    </div>
-                               </div>
-                               <div class="col-4">
-									<div class="footer-gallery">
-										<img src="img/gallery-footer-6.jpg" class="img-fluid w-100" alt="">
-                                        <div class="footer-search-icon">
-                                            <a href="img/gallery-footer-6.jpg" data-lightbox="footerGallery-6" class="my-auto"><i class="fas fa-search-plus text-white"></i></a>
-                                        </div>
-									</div>
-								</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer End -->
-
-
-        <!-- Copyright Start -->
-        <div class="container-fluid copyright py-4">
-            <div class="container">
-                <div class="row g-4 align-items-center">
-                    <div class="col-md-4 text-center text-md-start mb-md-0">
-                        <span class="text-body"><a href="#"><i class="fas fa-copyright text-light me-2"></i>شركة أركان 01065496700</a>, جميع الحقوق محفوظة.</span>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <div class="d-flex align-items-center justify-content-center">
-                            <a href="#" class="btn-hover-color btn-square text-white me-2"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="btn-hover-color btn-square text-white me-2"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="btn-hover-color btn-square text-white me-2"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="btn-hover-color btn-square text-white me-2"><i class="fab fa-pinterest"></i></a>
-                            <a href="#" class="btn-hover-color btn-square text-white me-0"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 text-center text-md-end text-body">
-                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Copyright End -->
-
-
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
-
+        // Universal Call Modal Elements (the source of truth for content)
+        const universalCallModalOverlay = document.getElementById('universalCallModalOverlay');
+        const universalInitialQuestion = document.getElementById('universalInitialQuestion');
+        const universalCallAction = document.getElementById('universalCallAction');
+        const universalConfirmCallBtn = document.getElementById('universalConfirmCallBtn');
+        const universalCancelCallBtn = document.getElementById('universalCancelCallBtn');
+        const universalCloseModalFinal = document.getElementById('universalCloseModalFinal');
         
-        <!-- JavaScript Libraries -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/counterup/counterup.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        // FAB specific modal overlay (its content div will be populated)
+        const fabCallModalOverlay = document.getElementById('fabCallModal');
+
+        function openCallModal(isFabModal = false) {
+            const modalToOpen = isFabModal ? fabCallModalOverlay : universalCallModalOverlay;
+            const contentHostInModalToOpen = modalToOpen.querySelector('.call-modal-content');
+
+            if (!contentHostInModalToOpen) {
+                // console.error("Modal content host not found for:", modalToOpen);
+                return; 
+            }
+
+            // If it's the FAB modal, clone content from the universal modal.
+            // This ensures the FAB modal has the necessary buttons and structure.
+            if (isFabModal) {
+                const universalModalContentSource = universalCallModalOverlay.querySelector('.call-modal-content');
+                if (universalModalContentSource) {
+                    contentHostInModalToOpen.innerHTML = universalModalContentSource.innerHTML; // Clone content
+
+                    // Attach listeners to the NEWLY CLONED elements within the FAB modal's contentHost
+                    const confirmBtnInFab = contentHostInModalToOpen.querySelector('#universalConfirmCallBtn');
+                    const cancelBtnInFab = contentHostInModalToOpen.querySelector('#universalCancelCallBtn');
+                    const closeFinalBtnInFab = contentHostInModalToOpen.querySelector('#universalCloseModalFinal');
+
+                    if (confirmBtnInFab) confirmBtnInFab.addEventListener('click', handleConfirmCall);
+                    if (cancelBtnInFab) cancelBtnInFab.addEventListener('click', handleCancelCall);
+                    if (closeFinalBtnInFab) closeFinalBtnInFab.addEventListener('click', handleCloseFinal);
+                } else {
+                    // console.error("Source content for FAB modal not found.");
+                    return;
+                }
+            }
+            
+            // Reset visibility state for the specific modal being opened
+            const initialQDiv = contentHostInModalToOpen.querySelector('#universalInitialQuestion');
+            const callActionDiv = contentHostInModalToOpen.querySelector('#universalCallAction');
+
+            if (initialQDiv) initialQDiv.classList.remove('hidden');
+            if (callActionDiv) callActionDiv.classList.add('hidden');
+            
+            modalToOpen.classList.add('active');
+        }
+
+        function handleConfirmCall(event) {
+            // Find the .call-modal-content div that is the parent of the clicked button
+            const currentModalContent = event.target.closest('.call-modal-content');
+            if (currentModalContent) {
+                const initialQ = currentModalContent.querySelector('#universalInitialQuestion');
+                const callAct = currentModalContent.querySelector('#universalCallAction');
+                if (initialQ) initialQ.classList.add('hidden');
+                if (callAct) callAct.classList.remove('hidden');
+            }
+        }
+
+        function handleCancelCall(event) {
+            const modalToClose = event.target.closest('.call-modal-overlay');
+            if (modalToClose) modalToClose.classList.remove('active');
+        }
+
+        function handleCloseFinal(event) {
+            const modalToClose = event.target.closest('.call-modal-overlay');
+            if (modalToClose) modalToClose.classList.remove('active');
+        }
+
+        // Attach to FAB
+        const fab = document.getElementById('fab');
+        if (fab) {
+            fab.addEventListener('click', (e) => {
+                e.stopPropagation(); // Prevent click from immediately propagating to document listener
+                openCallModal(true); 
+            });
+        }
         
+        // Attach to other call buttons with class 'trigger-call-modal'
+        const triggerButtons = document.querySelectorAll('.trigger-call-modal');
+        triggerButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault(); 
+                e.stopPropagation(); // Prevent click from immediately propagating to document listener
+                openCallModal(false); 
+            });
+        });
 
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
+        // These listeners are for the original buttons within the universalCallModalOverlay.
+        // These are stable and their listeners only need to be set once.
+        if (universalConfirmCallBtn) universalConfirmCallBtn.addEventListener('click', handleConfirmCall);
+        if (universalCancelCallBtn) universalCancelCallBtn.addEventListener('click', handleCancelCall);
+        if (universalCloseModalFinal) universalCloseModalFinal.addEventListener('click', handleCloseFinal);
+        
+        // Close modal if clicked outside its content area
+        [universalCallModalOverlay, fabCallModalOverlay].forEach(overlay => {
+            if (overlay) {
+                overlay.addEventListener('click', function(event) {
+                    // Check if the click is directly on the overlay itself (event.target === this)
+                    // and not on its children (the modal content).
+                    if (event.target === this) { 
+                        this.classList.remove('active');
+                    }
+                });
+            }
+        });
 
-    </body>
 
+        // Slideshow Logic
+        const slides = document.querySelectorAll('#hero-slideshow .slide');
+        const dotsContainer = document.getElementById('slideshowDots');
+        const prevButton = document.getElementById('prevSlide');
+        const nextButton = document.getElementById('nextSlide');
+        let currentSlide = 0;
+        let slideInterval;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                if (i === index) {
+                    slide.classList.add('active');
+                }
+            });
+            updateDots(index);
+            currentSlide = index;
+        }
+
+        function updateDots(index) {
+            if (!dotsContainer) return; 
+            const dots = dotsContainer.children;
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].classList.remove('active');
+            }
+            if (dots[index]) {
+                 dots[index].classList.add('active');
+            }
+        }
+
+        function nextSlideFn() { 
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function prevSlideFn() { 
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function createDots() {
+            if (!dotsContainer) return; 
+            slides.forEach((_, i) => {
+                const dot = document.createElement('button');
+                dot.classList.add('dot');
+                dot.setAttribute('aria-label', `Go to slide ${i + 1}`);
+                dot.addEventListener('click', () => {
+                    showSlide(i);
+                    resetInterval();
+                });
+                dotsContainer.appendChild(dot);
+            });
+        }
+        
+        function resetInterval() {
+            clearInterval(slideInterval);
+            slideInterval = setInterval(nextSlideFn, 5000); 
+        }
+
+        if (slides.length > 0) {
+            createDots();
+            showSlide(0); 
+            
+            if (prevButton && nextButton) {
+                prevButton.addEventListener('click', () => {
+                    prevSlideFn();
+                    resetInterval();
+                });
+                nextButton.addEventListener('click', () => {
+                    nextSlideFn();
+                    resetInterval();
+                });
+            }
+            resetInterval(); 
+        }
+
+    </script>
+</body>
 </html>
